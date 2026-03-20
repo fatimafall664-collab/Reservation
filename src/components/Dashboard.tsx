@@ -3,14 +3,9 @@ import React from "react";
 const Dashboard: React.FC = () => {
   return (
     <div className="flex h-screen bg-gray-800 text-white">
-      {/* Sidebar gauche */}
+    
      <aside className="w-64 bg-gray-900 p-5 flex flex-col">
-  {/* Logo */}
-  <img
-    src="/MFRScine.png"      
-    alt="logo"
-    className="w-full h-auto mb-4"   
-  />
+  <img src="/MFRScine.png" alt="logo" className="w-full h-auto mb-4"/>
 
   <nav className="flex flex-col gap-4 w-full">
     <button className="hover:bg-gray-700 p-2 rounded text-white text-left">Tableau de bord</button>
@@ -21,9 +16,8 @@ const Dashboard: React.FC = () => {
   </nav>
 </aside>
 
-      {/* Contenu principal */}
-      <main className="flex-1 p-6 overflow-y-auto">
-        {/* Cartes statistiques */}
+      <section className="flex-1 p-6 overflow-y-auto">
+      
         <div className="grid grid-cols-4 gap-6 mb-6">
           <div className="bg-gray-900 shadow rounded-lg p-4 text-white">
             <h2 className="text-gray-400">Total Films</h2>
@@ -43,12 +37,10 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
-{/* Top 5 Films les plus visionnés */}
 <div className="mb-6">
   <h2 className="text-xl font-bold mb-4">Les plus visionnés</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
 
-    {/* Film 1 */}
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
       <div className="w-full h-64 bg-gray-700 flex items-start justify-center overflow-hidden">
         <img src="/blackPanther.jpg" alt="Black Panther" className="w-full h-full object-cover object-top" />
@@ -57,7 +49,6 @@ const Dashboard: React.FC = () => {
       <p className="px-3 pb-3 text-center text-gray-400">125 694 vues</p>
     </div>
 
-    {/* Film 2 */}
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
       <div className="w-full h-64 bg-gray-700 flex items-start justify-center overflow-hidden">
         <img src="/theWomanKing.jpg" alt="The Woman King" className="w-full h-full object-cover object-top" />
@@ -66,7 +57,6 @@ const Dashboard: React.FC = () => {
       <p className="px-3 pb-3 text-center text-gray-400">98 165 vues</p>
     </div>
 
-    {/* Film 3 */}
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
       <div className="w-full h-64 bg-gray-700 flex items-start justify-center overflow-hidden">
         <img src="/prisonBreak.jpg" alt="Revenge" className="w-full h-full object-cover object-top" />
@@ -75,7 +65,6 @@ const Dashboard: React.FC = () => {
       <p className="px-3 pb-3 text-center text-gray-400">87 543 vues</p>
     </div>
 
-    {/* Film 4 */}
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
       <div className="w-full h-64 bg-gray-700 flex items-start justify-center overflow-hidden">
         <img src="/revenge.jpg" alt="Winx Club" className="w-full h-full object-cover object-top" />
@@ -84,7 +73,6 @@ const Dashboard: React.FC = () => {
       <p className="px-3 pb-3 text-center text-gray-400">76 420 vues</p>
     </div>
 
-    {/* Film 5 */}
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
       <div className="w-full h-64 bg-gray-700 flex items-start justify-center overflow-hidden">
         <img src="/theOriginals.jpg" alt="Spider-Man" className="w-full h-full object-cover object-top" />
@@ -95,9 +83,9 @@ const Dashboard: React.FC = () => {
 
   </div>
 </div>
-      </main>
+      </section>
     </div>
-  );
-};
+  )
+}
 
 export default Dashboard;
