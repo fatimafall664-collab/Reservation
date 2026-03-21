@@ -4,7 +4,7 @@ type NavbarProps = {
   logo: string; 
 };
 
-export default function Navbar({ logo }: NavbarProps) {
+export default function Navbar({ }: NavbarProps) {
   return (
     <nav className="flex items-center justify-between bg-gray-800 text-white">
       <div className="flex w-12 h-auto m-0 p-0  items-center gap-2">
