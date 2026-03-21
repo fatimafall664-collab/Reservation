@@ -7,6 +7,10 @@ import Inscription from "./Pages/Inscription";
 import Reinitialisation from "./Pages/Reinitialisation";
 import { useState } from "react";
 import "./App.css";
+import LandingPage from "./components/LandingPage";
+import Film from "./components/film";
+import Serie from "./components/serie";
+import Dashboard from "./components/Dashboard";
 import Footer from "./components/Footer";
 import Chart from "./components/diagramme";
 
@@ -25,8 +29,12 @@ export default function App() {
           <Route path="/reset-password" element={<Reinitialisation />} />
         </Routes>
       </BrowserRouter>
-      <Chart />
-      <Footer />
+          <LandingPage/>
+          <Serie/>
+          <Film/>
+          <Dashboard/>
+          <Chart />
+          <Footer />
     </div>
   );
 }

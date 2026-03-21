@@ -13,7 +13,6 @@ export default function Navbar({ }: NavbarProps) {
       </div>
       <ul className="flex gap-4">
         <li><Link to="/">Accueil</Link></li>
-        <li><Link to="/">Series</Link></li>
         <li><Link to="/connexion">Connexion</Link></li>
         <li><Link to="/inscription">Inscription</Link></li>
         <li><Link to="/reset-password">Reinitialisation</Link></li>

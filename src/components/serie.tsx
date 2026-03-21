@@ -33,7 +33,7 @@ const series: SerieType[] = [
 export default function Serie() {
   return (
     <div className="p-6">
-      <h2 className="text-white text-2xl mb-4">📺 Séries</h2>
+      <h2 className="text-white text-2xl mb-4">Séries</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {series.map((serie, index) => (
