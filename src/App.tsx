@@ -5,7 +5,6 @@ import Series from "./components/serie";
 import Connexion from "./Pages/Connexion";
 import Inscription from "./Pages/Inscription";
 import Reinitialisation from "./Pages/Reinitialisation";
-import { useState } from "react";
 import "./App.css";
 import LandingPage from "./components/LandingPage";
 import Film from "./components/film";
@@ -15,8 +14,6 @@ import Footer from "./components/Footer";
 import Chart from "./components/diagramme";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#7f1d1d] text-white flex flex-col">
       <BrowserRouter>
@@ -29,12 +26,13 @@ export default function App() {
           <Route path="/reset-password" element={<Reinitialisation />} />
         </Routes>
       </BrowserRouter>
-          <LandingPage/>
-          <Serie/>
-          <Film/>
-          <Dashboard/>
-          <Chart />
-          <Footer />
+
+      <LandingPage />
+      <Serie />
+      <Film />
+      <Dashboard />
+      <Chart />
+      <Footer />
     </div>
   );
 }
